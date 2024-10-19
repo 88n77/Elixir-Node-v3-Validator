@@ -3,7 +3,6 @@
 set -e  # Завершити скрипт при будь-якій помилці
 
 echo "===================================================="
-echo "Завантаження та виконання логотипу..."
 wget https://raw.githubusercontent.com/88n77/Logo-88n77/main/logo.sh
 chmod +x logo.sh
 ./logo.sh
@@ -46,4 +45,4 @@ echo "Запуск валідатора..."
 docker run -d --env-file ~/elixir/validator.env --name elixir --platform linux/amd64 elixirprotocol/validator:v3
 
 echo "===================================================="
-echo "Налаштування завершено! Валідатор запущений."
+echo "Валідатор запущений. Перегляньте id контейнера docker container ls"
