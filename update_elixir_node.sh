@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e  # Завершити скрипт при будь-якій помилці
+echo -e "\e[38;5;214m"
 
 echo "===================================================="
 wget https://raw.githubusercontent.com/88n77/Logo-88n77/main/logo.sh
