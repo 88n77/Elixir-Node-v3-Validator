@@ -20,6 +20,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo usermod -aG docker $USER
 
+# Інформація для перезавантаження групи користувачів Docker
+echo "Зверніть увагу: Для активації групи Docker, ви можете перезапустити термінал або виконати команду 'newgrp docker'."
+
 echo "===================================================="
 echo "Створення директорії для валідатора..."
 mkdir -p ~/elixir && cd ~/elixir
